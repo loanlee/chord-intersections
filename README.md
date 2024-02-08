@@ -8,12 +8,11 @@ This Python script calculates the number of intersections between chords on a ci
 
 ## Usage
 
-1. **Clone or Download the Repository**:
-   - If you haven't already done so, clone the repository to your local machine by running the following command in your terminal or command prompt:
-
-     ```bash
-     git clone https://github.com/loanlee/chord-intersections.git
-     ```
+1. Clone the Repository:
+   
+    ```bash
+    git clone https://github.com/loanlee/chord-intersections.git
+    ```
 
 2. Navigave to the directory containing `count_intersections.py` file
 
