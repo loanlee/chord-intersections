@@ -2,6 +2,26 @@
 
 This Python script calculates the number of intersections between chords on a circle based on the given radians and identifiers.
 
+## Algorithm Explanation
+
+1. **Input Processing**:
+   - The script takes a list of radians and a list of identifiers as input
+   - The radians and identifiers are processed into a dictionary where the keys represent chord numbers and the values are lists of radian values
+   - Each list of radian values has 2 floats, corresponding to the start and end points of the chords
+   - Each list is then sorted - this fixes the smaller item in the list to be the starting points
+
+2. **Chord Intersection Calculation**:
+   - The algorithm iterates through the list of chords and compares each chord with the remaining chords
+   - For each pair of chords, it checks if their respective radian values form an intersection on the circle
+   - For any two chords, there are two orientations that yield an intersection. Going clockwise, if the points are in the order
+      -  s1 < s2 < e1 < e2 i.e. e1 is between s2 and e2
+      -  s2 < s1 < e2 < e1 i.e. e2 is between s1 and e1
+   - Since all starting and ending points are unique, checking for strict inequalties is enough
+   - If an intersection is found, the intersection counter is incremented
+
+3. **Output**:
+   - The script returns the total number of intersections between chords on the circle.
+
 ## Time Complexity
 
 The time complexity of the provided Python code can be broken down as follows:
