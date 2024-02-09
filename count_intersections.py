@@ -7,7 +7,8 @@ def count_intersections(inputs: List[List[T]]) -> int:
     Calculate the number of intersections between chords on a circle.
 
     Args:
-        inputs (List[List[T]]): A list of lists containing radians and identifiers.
+        inputs (List[List[T]]): A list of lists, first list[float] 
+        containing radians and second list[str] containing identifiers.
 
     Returns:
         int: The number of intersections between chords on the circle.
