@@ -2,6 +2,19 @@
 
 This Python script calculates the number of intersections between chords on a circle based on the given radians and identifiers.
 
+## Time Complexity
+
+The time complexity of the provided Python code can be broken down as follows:
+
+- **Input Processing**: 
+  - Iterating through the input lists to create a dictionary: O(n), where n is the length of the input lists.
+
+- **Chord Intersection Calculation**:
+
+  - Nested loop to check for intersections: O(n^2), where n is the number of items in the list.
+
+Overall, the worst case time complexity of the code is O(n^2), where n is the length of the input lists.
+
 ## Requirements
 
 - Python 3.x
